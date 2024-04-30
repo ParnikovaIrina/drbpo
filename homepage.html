@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>СДРБРО</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+   </head>
+   <body class="home">
+С днюхой тебя, дорогая моя Бро!!!
+<p class="text">
+   Бро, Братюня, Братка, предлагаю тебе окунуться в увлекательнейшее приключение! Условия прохождения до безобразия просты. Нужно пройти все задания, соблюдая указанную последовательность. Для открытия страницы с заданием нужно ввести пароль, а пароль ты можешь узнать только пройдя предыдущий этап(звуки злобного хихиканья). И первым паролем будет ответ на вопрос "Сколько же годиков стукнуло Бро по паспорту?" <br>Удачи, Бро!
+</p>
+
+<p>
+   <a href="#modal" class="button">Первое задание</a>
+</p>
+<div id="modal" class="modal">
+   <div class="content-modal">
+     <h4>Пароль:</h4>
+     <input type="text" placeholder="Пароль" autocomplete="off" class="input" id="input">
+     <button id="enter">Перейти</button>
+     <p id="result"></p><!--Результат проверки-->
+     <a href="#close" class="close">Закрыть</a>
+   </div>
+ </div>
+ <script type="text/javascript">
+   window.addEventListener('DOMContentLoaded', function() {
+function myPass() {
+let password = ['36']; //Пароль
+let input = document.getElementById('input').value; //Текстовое поле
+let result = document.getElementById('result'); //Результат проверки
+//Если пароль введен неверно или поле пустое
+let assess = false.innerHTMl = ['Ошибка!']; //Выводим результат проверки
+//console.log('Мимо');
+for (let i = 0; i < password.length; i++) { //Проверяем на совпадение
+ if (password[i] == input) {//Если пароль введен верно
+   assess = true.innerHTMl = ['Умничка']; //Выводим результат проверки
+   //console.log('Точно');
+   //Переходим на станицу, с задержкой 2 секунды
+   setTimeout(() => {location.href = "page1.html"}, 2000);
+   break;
+ }
+}
+result.innerHTML = assess //Результат проверки
+}
+document.getElementById('enter').addEventListener('click', myPass);
+});
+</script>
+
+<div class="as-console-wrapper"><div class="as-console"></div></div></p>
+
+<p>
+   <a href="#modal1" class="button">Второе задание</a>
+</p>
+<div id="modal1" class="modal">
+   <div class="content-modal">
+     <h4>Пароль:</h4>
+     <input type="text" placeholder="Пароль" autocomplete="off" class="input" id="input1">
+     <button id="enter1">Перейти</button>
+     <p id="result1"></p><!--Результат проверки-->
+     <a href="#close" class="close">Закрыть</a>
+   </div>
+ </div>
+ <script type="text/javascript">
+   window.addEventListener('DOMContentLoaded', function() {
+function myPass() {
+let password = ['1368']; //Пароль
+let input = document.getElementById('input1').value; //Текстовое поле
+let result = document.getElementById('result1'); //Результат проверки
+//Если пароль введен неверно или поле пустое
+let assess = false.innerHTMl = ['Ошибка!']; //Выводим результат проверки
+//console.log('Мимо');
+for (let i = 0; i < password.length; i++) { //Проверяем на совпадение
+ if (password[i] == input) {//Если пароль введен верно
+   assess = true.innerHTMl = ['Умничка']; //Выводим результат проверки
+   //console.log('Точно');
+   //Переходим на станицу, с задержкой 2 секунды
+   setTimeout(() => {window.open("page1.html")}, 2000);
+   break;
+ }
+}
+result1.innerHTML = assess //Результат проверки
+}
+document.getElementById('enter1').addEventListener('click', myPass);
+});
+</script>
+
+<div class="as-console-wrapper"><div class="as-console"></div></div></p>
+   </body>
+</html>
